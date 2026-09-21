@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text Links and Media</title>
+</head>
+
+<body>
+
+    <h1>Text, Links and Media</h1>
+
+    <p>
+        In this page I am practicing different text elements,
+        links and media elements in HTML.
+    </p>
+
+
+    <h2>Text Formatting</h2>
+
+    <p>
+        This is <b>bold text</b>.
+    </p>
+
+    <p>
+        This is <strong>important text</strong>.
+    </p>
+
+    <p>
+        This is <i>italic text</i>.
+    </p>
+
+    <p>
+        This is <em>emphasized text</em>.
+    </p>
+
+    <p>
+        This is <u>underlined text</u>.
+    </p>
+
+    <p>
+        This is <mark>highlighted text</mark>.
+    </p>
+
+    <p>
+        This is <small>small text</small>.
+    </p>
+
+    <p>
+        Old price:
+        <del>₹999</del>
+        New price:
+        <ins>₹699</ins>
+    </p>
+
+    <p>
+        Water formula: H<sub>2</sub>O
+    </p>
+
+    <p>
+        10<sup>2</sup> = 100
+    </p>
+
+
+    <h2>Quotes</h2>
+
+    <p>
+        HTML is used to create the structure of web pages.
+    </p>
+
+    <blockquote>
+        The web is for everyone.
+    </blockquote>
+
+    <p>
+        My teacher said,
+        <q>Practice HTML every day.</q>
+    </p>
+
+
+    <h2>Abbreviation</h2>
+
+    <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        is used for creating web pages.
+    </p>
+
+
+    <h2>Address</h2>
+
+    <address>
+        Written by Your Name<br>
+        Email: example@email.com<br>
+        India
+    </address>
+
+
+    <h2>Code</h2>
+
+    <p>
+        Use the
+        <code>&lt;h1&gt;</code>
+        tag for the main heading.
+    </p>
+
+    <pre>
+This is preformatted text.
+Spaces and line breaks
+are preserved here.
+    </pre>
+
+
+    <h2>Keyboard Input</h2>
+
+    <p>
+        Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save a file.
+    </p>
+
+
+    <h2>Links</h2>
+
+    <p>
+        <a href="https://www.google.com">
+            Visit Google
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.youtube.com" target="_blank">
+            Open YouTube in new tab
+        </a>
+    </p>
+
+    <p>
+        <a href="mailto:example@email.com">
+            Send Email
+        </a>
+    </p>
+
+    <p>
+        <a href="tel:+911234567890">
+            Call Us
+        </a>
+    </p>
+
+
+    <h2>Image</h2>
+
+    <img
+        src="https://tinypng.com/images/social/website.jpg"
+        alt="Sample image"
+        width="400"
+        height="250"
+    >
+
+
+    <h2>Figure and Figcaption</h2>
+
+    <figure>
+
+        <img
+            src="https://via.placeholder.com/400x250"
+            alt="Nature image"
+            width="400"
+        >
+
+        <figcaption>
+            This is a sample image with a caption.
+        </figcaption>
+
+    </figure>
+
+
+    <h2>Image as a Link</h2>
+
+    <a href="https://www.google.com">
+
+        <img
+            src="https://via.placeholder.com/200x100"
+            alt="Click to visit Google"
+            width="200"
+        >
+
+    </a>
+
+
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <h2>Video</h2>
+
+    <video width="500" controls>
+
+        <source src="video.mp4" type="video/mp4">
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <h2>Video with Poster</h2>
+
+    <video
+        width="500"
+        controls
+        poster="https://via.placeholder.com/500x280"
+    >
+
+        <source src="video.mp4" type="video/mp4">
+
+        Your browser does not support the video element.
+
+    </video>
+
+
+    <h2>YouTube Video</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video"
+        allowfullscreen>
+    </iframe>
+
+
+    <h2>Website using iframe</h2>
+
+    <iframe
+        src="https://www.example.com"
+        width="600"
+        height="300"
+        title="Example website">
+    </iframe>
+
+
+    <h2>Download Link</h2>
+
+    <a href="notes.pdf" download>
+        Download Notes
+    </a>
+
+
+    <h2>Image with Different Sizes</h2>
+
+    <picture>
+
+        <source
+            media="(min-width: 800px)"
+            srcset="https://via.placeholder.com/800x400"
+        >
+
+        <source
+            media="(min-width: 500px)"
+            srcset="https://via.placeholder.com/500x300"
+        >
+
+        <img
+            src="https://via.placeholder.com/300x200"
+            alt="Responsive image"
+        >
+
+    </picture>
+
+
+    <h2>Responsive Image using srcset</h2>
+
+    <img
+        src="https://via.placeholder.com/400x250"
+        srcset="
+            https://via.placeholder.com/400x250 400w,
+            https://via.placeholder.com/800x500 800w
+        "
+        sizes="(max-width: 600px) 400px, 800px"
+        alt="Responsive sample image"
+    >
+
+
+    <h2>My Favorite Website</h2>
+
+    <p>
+        One website that I use for learning is
+        <a href="https://developer.mozilla.org/" target="_blank">
+            MDN Web Docs
+        </a>.
+    </p>
+
+
+    <h2>Practice</h2>
+
+    <p>
+        I am learning
+        <strong>HTML</strong>,
+        <em>web development</em>
+        and different media elements.
+    </p>
+
+    <figure>
+
+        <img
+            src="https://via.placeholder.com/400x250"
+            alt="My practice image"
+            width="400"
+        >
+
+        <figcaption>
+            My HTML media practice.
+        </figcaption>
+
+    </figure>
+
+
+    <hr>
+
+    <p>
+        &copy; 2026 HTML Practice
+    </p>
+
+</body>
+
+</html>
