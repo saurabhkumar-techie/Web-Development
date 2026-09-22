@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Semantic HTML</title>
+
+    <meta
+        name="description"
+        content="Learning semantic HTML and accessible webpage structure."
+    >
+</head>
+
+<body>
+
+    <header>
+
+        <h1>My Web Development Blog</h1>
+
+        <p>
+            Learning HTML step by step.
+        </p>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#articles">Articles</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="home">
+
+            <h2>Welcome to My Website</h2>
+
+            <p>
+                This website is created to practice semantic HTML.
+            </p>
+
+            <p>
+                Semantic HTML makes the structure of a webpage
+                easier to understand.
+            </p>
+
+        </section>
+
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                My name is Your Name. I am learning web development
+                and practicing HTML, CSS and JavaScript.
+            </p>
+
+            <p>
+                My goal is to create useful and responsive websites.
+            </p>
+
+        </section>
+
+
+        <section id="articles">
+
+            <h2>My Articles</h2>
+
+
+            <article>
+
+                <header>
+
+                    <h3>What is HTML?</h3>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-01-10">
+                            January 10, 2026
+                        </time>
+                    </p>
+
+                </header>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                    It is used to create the structure of web pages.
+                </p>
+
+                <p>
+                    HTML uses different elements to organize
+                    content on a webpage.
+                </p>
+
+                <footer>
+                    <p>Category: HTML</p>
+                </footer>
+
+            </article>
+
+
+            <article>
+
+                <header>
+
+                    <h3>Why Learn Semantic HTML?</h3>
+
+                    <p>
+                        Published on
+                        <time datetime="2026-01-15">
+                            January 15, 2026
+                        </time>
+                    </p>
+
+                </header>
+
+                <p>
+                    Semantic HTML gives meaning to different parts
+                    of a webpage.
+                </p>
+
+                <p>
+                    It also helps browsers, search engines and
+                    assistive technologies understand the page.
+                </p>
+
+                <footer>
+                    <p>Category: Web Development</p>
+                </footer>
+
+            </article>
+
+
+            <article>
+
+                <header>
+
+                    <h3>Learning Web Development</h3>
+
+                </header>
+
+                <p>
+                    Learning web development requires regular practice.
+                </p>
+
+                <p>
+                    I am currently learning HTML and will learn CSS
+                    and JavaScript next.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>HTML Semantic Elements</h2>
+
+            <p>
+                Some commonly used semantic elements are:
+            </p>
+
+            <ul>
+
+                <li>header</li>
+                <li>nav</li>
+                <li>main</li>
+                <li>section</li>
+                <li>article</li>
+                <li>aside</li>
+                <li>footer</li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
+
+            <h2>Article with Image</h2>
+
+            <article>
+
+                <h3>My HTML Practice</h3>
+
+                <figure>
+
+                    <img
+                        src="https://via.placeholder.com/500x250"
+                        alt="HTML practice example"
+                        width="500"
+                    >
+
+                    <figcaption>
+                        HTML practice webpage.
+                    </figcaption>
+
+                </figure>
+
+                <p>
+                    This article contains an image inside
+                    a figure element.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Aside Example</h2>
+
+            <p>
+                The main content of the page is written here.
+            </p>
+
+            <aside>
+
+                <h3>Quick Tip</h3>
+
+                <p>
+                    Always use meaningful HTML elements
+                    whenever possible.
+                </p>
+
+            </aside>
+
+        </section>
+
+
+        <section>
+
+            <h2>Details and Summary</h2>
+
+            <details>
+
+                <summary>What is semantic HTML?</summary>
+
+                <p>
+                    Semantic HTML uses elements that describe
+                    the meaning of their content.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>Why use semantic elements?</summary>
+
+                <p>
+                    They make webpages easier to understand,
+                    maintain and access.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <section>
+
+            <h2>Accessibility Basics</h2>
+
+            <h3>Image Alt Text</h3>
+
+            <img
+                src="https://via.placeholder.com/300x150"
+                alt="A sample HTML webpage"
+                width="300"
+            >
+
+
+            <h3>Form Label</h3>
+
+            <form>
+
+                <label for="name">
+                    Your Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+
+            <h3>Navigation</h3>
+
+            <nav aria-label="Main navigation">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#articles">Articles</a>
+
+            </nav>
+
+        </section>
+
+
+        <section>
+
+            <h2>ARIA Example</h2>
+
+            <button
+                type="button"
+                aria-label="Open menu"
+            >
+                Menu
+            </button>
+
+            <p aria-label="Website information">
+                This is an accessibility example.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Contact Me</h2>
+
+            <address id="contact">
+
+                Your Name<br>
+                Email:
+                <a href="mailto:example@email.com">
+                    example@email.com
+                </a>
+                <br>
+                India
+
+            </address>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 My Web Development Blog
+        </p>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
