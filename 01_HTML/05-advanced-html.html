@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Advanced HTML</title>
+
+    <meta
+        name="description"
+        content="Advanced HTML practice including data attributes, dialog, template, canvas, SVG and accessibility."
+    >
+
+    <meta
+        name="author"
+        content="Your Name"
+    >
+
+    <meta
+        name="keywords"
+        content="HTML, Advanced HTML, Web Development"
+    >
+
+    <meta
+        property="og:title"
+        content="Advanced HTML Practice"
+    >
+
+    <meta
+        property="og:description"
+        content="My advanced HTML practice page."
+    >
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Advanced HTML</h1>
+
+        <p>
+            This page contains some advanced HTML elements
+            and features.
+        </p>
+
+        <nav>
+
+            <a href="#data">Data Attributes</a>
+
+            <a href="#media">Media</a>
+
+            <a href="#interactive">Interactive</a>
+
+            <a href="#graphics">Graphics</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="data">
+
+            <h2>Data Attributes</h2>
+
+            <div
+                data-user-id="101"
+                data-user-name="Rahul"
+                data-course="HTML"
+            >
+                Student Information
+            </div>
+
+            <p>
+                Data attributes can store custom information
+                inside HTML elements.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Details and Summary</h2>
+
+            <details>
+
+                <summary>What is HTML?</summary>
+
+                <p>
+                    HTML stands for HyperText Markup Language.
+                </p>
+
+            </details>
+
+            <br>
+
+            <details open>
+
+                <summary>What is CSS?</summary>
+
+                <p>
+                    CSS is used to style HTML elements.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <section id="interactive">
+
+            <h2>Dialog</h2>
+
+            <button
+                type="button"
+                onclick="document.getElementById('myDialog').showModal()"
+            >
+                Open Dialog
+            </button>
+
+            <dialog id="myDialog">
+
+                <h3>Hello!</h3>
+
+                <p>
+                    This is a dialog box created using HTML.
+                </p>
+
+                <button
+                    type="button"
+                    onclick="document.getElementById('myDialog').close()"
+                >
+                    Close
+                </button>
+
+            </dialog>
+
+        </section>
+
+
+        <section>
+
+            <h2>Template</h2>
+
+            <template id="studentTemplate">
+
+                <div>
+
+                    <h3>Student Name</h3>
+
+                    <p>
+                        This content is inside a template.
+                    </p>
+
+                </div>
+
+            </template>
+
+            <p>
+                The template element stores HTML that can be
+                used later with JavaScript.
+            </p>
+
+        </section>
+
+
+        <section id="media">
+
+            <h2>Picture Element</h2>
+
+            <picture>
+
+                <source
+                    media="(min-width: 800px)"
+                    srcset="https://via.placeholder.com/800x400"
+                >
+
+                <source
+                    media="(min-width: 500px)"
+                    srcset="https://via.placeholder.com/500x300"
+                >
+
+                <img
+                    src="https://via.placeholder.com/300x200"
+                    alt="Responsive sample image"
+                >
+
+            </picture>
+
+        </section>
+
+
+        <section>
+
+            <h2>Responsive Image with srcset</h2>
+
+            <img
+                src="https://via.placeholder.com/400x250"
+                srcset="
+                    https://via.placeholder.com/400x250 400w,
+                    https://via.placeholder.com/800x500 800w
+                "
+                sizes="(max-width: 600px) 400px, 800px"
+                alt="Responsive image example"
+            >
+
+        </section>
+
+
+        <section id="graphics">
+
+            <h2>Canvas</h2>
+
+            <canvas
+                id="myCanvas"
+                width="400"
+                height="200"
+                style="border: 1px solid black;"
+            >
+                Your browser does not support canvas.
+            </canvas>
+
+        </section>
+
+
+        <section>
+
+            <h2>SVG</h2>
+
+            <svg
+                width="300"
+                height="200"
+                viewBox="0 0 300 200"
+            >
+
+                <rect
+                    x="20"
+                    y="20"
+                    width="260"
+                    height="160"
+                    fill="lightblue"
+                    stroke="black"
+                />
+
+                <circle
+                    cx="150"
+                    cy="100"
+                    r="50"
+                    fill="orange"
+                />
+
+                <text
+                    x="150"
+                    y="105"
+                    text-anchor="middle"
+                    font-size="20"
+                >
+                    HTML
+                </text>
+
+            </svg>
+
+        </section>
+
+
+        <section>
+
+            <h2>Progress</h2>
+
+            <p>
+                HTML Course:
+            </p>
+
+            <progress
+                value="80"
+                max="100"
+            >
+                80%
+            </progress>
+
+        </section>
+
+
+        <section>
+
+            <h2>Meter</h2>
+
+            <p>
+                My HTML Skill:
+            </p>
+
+            <meter
+                value="8"
+                min="0"
+                max="10"
+            >
+                8 out of 10
+            </meter>
+
+        </section>
+
+
+        <section>
+
+            <h2>Time Element</h2>
+
+            <p>
+                My HTML course started on
+                <time datetime="2026-01-01">
+                    January 1, 2026
+                </time>.
+            </p>
+
+            <p>
+                The class starts at
+                <time datetime="10:00">
+                    10:00 AM
+                </time>.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Code Examples</h2>
+
+            <p>
+                The HTML heading tag is:
+            </p>
+
+            <code>
+                &lt;h1&gt;Hello World&lt;/h1&gt;
+            </code>
+
+            <pre>
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+
+        </section>
+
+
+        <section>
+
+            <h2>Keyboard Input</h2>
+
+            <p>
+                Press
+                <kbd>Ctrl</kbd>
+                +
+                <kbd>S</kbd>
+                to save your file.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Output Element</h2>
+
+            <form oninput="result.value = Number(a.value) + Number(b.value)">
+
+                <label for="a">
+                    First Number:
+                </label>
+
+                <input
+                    type="number"
+                    id="a"
+                    value="10"
+                >
+
+                <br><br>
+
+                <label for="b">
+                    Second Number:
+                </label>
+
+                <input
+                    type="number"
+                    id="b"
+                    value="20"
+                >
+
+                <br><br>
+
+                Result:
+
+                <output name="result">
+                    30
+                </output>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <h2>Iframe</h2>
+
+            <iframe
+                src="https://www.example.com"
+                width="600"
+                height="300"
+                title="Example website"
+            >
+            </iframe>
+
+        </section>
+
+
+        <section>
+
+            <h2>Accessibility</h2>
+
+            <button
+                type="button"
+                aria-label="Open navigation menu"
+            >
+                Menu
+            </button>
+
+            <p>
+                Accessibility helps different users access
+                and understand websites.
+            </p>
+
+            <img
+                src="https://via.placeholder.com/300x150"
+                alt="Example image showing HTML practice"
+                width="300"
+            >
+
+        </section>
+
+
+        <section>
+
+            <h2>Semantic Time and Mark</h2>
+
+            <p>
+                I am learning
+                <mark>Advanced HTML</mark>
+                in 2026.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Download</h2>
+
+            <a
+                href="notes.pdf"
+                download
+            >
+                Download HTML Notes
+            </a>
+
+        </section>
+
+
+        <section>
+
+            <h2>Contact</h2>
+
+            <address>
+
+                Your Name<br>
+
+                Email:
+                <a href="mailto:example@email.com">
+                    example@email.com
+                </a>
+
+                <br>
+
+                India
+
+            </address>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Advanced HTML Practice
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const canvas = document.getElementById("myCanvas");
+
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "lightgreen";
+
+        ctx.fillRect(50, 50, 300, 100);
+
+        ctx.fillStyle = "black";
+
+        ctx.font = "24px Arial";
+
+        ctx.fillText("HTML Canvas", 110, 110);
+
+    </script>
+
+</body>
+
+</html>
