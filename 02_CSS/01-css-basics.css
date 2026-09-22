@@ -1,0 +1,33 @@
+body {
+    background-color: lightgray;
+    color: black;
+}
+
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:hover {
+    background-color: darkblue;
+}
