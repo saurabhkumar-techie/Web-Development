@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+.title {
+    font-size: 30px;
+}
+
+#main-heading {
+    color: red;
+}
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+div p {
+    color: purple;
+}
+
+div > p {
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
+
+p:hover {
+    color: orange;
+}
