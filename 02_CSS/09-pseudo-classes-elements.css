@@ -1,0 +1,61 @@
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+button:active {
+    background-color: darkblue;
+    color: white;
+}
+
+li:first-child {
+    color: green;
+}
+
+li:last-child {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: orange;
+}
+
+input:disabled {
+    background-color: lightgray;
+}
+
+input:checked {
+    accent-color: green;
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: red;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+.box::before {
+    content: "Start ";
+    color: blue;
+}
+
+.box::after {
+    content: " End";
+    color: red;
+}
+
+::selection {
+    background-color: yellow;
+    color: black;
+}
