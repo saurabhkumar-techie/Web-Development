@@ -1,0 +1,44 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.move {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: transform 0.5s;
+}
+
+.move:hover {
+    transform: translateX(50px);
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    transition: 0.5s;
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+.card {
+    width: 200px;
+    padding: 20px;
+    background-color: lightgray;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: skyblue;
+}
