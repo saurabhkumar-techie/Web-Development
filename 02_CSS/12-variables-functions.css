@@ -1,0 +1,31 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: lightgray;
+    --text-color: #222;
+    --spacing: 20px;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing);
+}
+
+.container {
+    width: calc(100% - 40px);
+    margin: auto;
+}
+
+.heading {
+    font-size: clamp(24px, 5vw, 48px);
+}
+
+.box {
+    width: min(500px, 100%);
+    padding: max(10px, 2vw);
+}
