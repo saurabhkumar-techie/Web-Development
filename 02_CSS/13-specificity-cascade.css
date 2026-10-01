@@ -1,0 +1,39 @@
+p {
+    color: blue;
+}
+
+.text {
+    color: green;
+}
+
+#title {
+    color: red;
+}
+
+div p {
+    color: purple;
+}
+
+.box p {
+    color: orange;
+}
+
+p {
+    color: black !important;
+}
+
+.parent {
+    color: blue;
+}
+
+.parent p {
+    color: inherit;
+}
+
+.reset {
+    color: initial;
+}
+
+.unset {
+    color: unset;
+}
