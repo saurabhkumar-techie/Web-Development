@@ -1,0 +1,53 @@
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
+.card {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.text {
+    font-size: clamp(18px, 3vw, 30px);
+}
+
+.list li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 2px solid blue;
+    outline-offset: 3px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
